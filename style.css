@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top, #78ffd6, #007991);
+  font-family: "Courier Prime", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.stopwatch {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stopwatch h1 {
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-weight: 300;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buttons img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.buttons img:hover {
+  transform: scale(1.1);
+}
+
+.buttons img:nth-child(2) {
+  width: 70px;
+}
+
+/* Responsive Typography */
+@media (max-width: 600px) {
+  .stopwatch h1 {
+    font-size: 40px;
+  }
+
+  .buttons img {
+    width: 40px;
+  }
+
+  .buttons img:nth-child(2) {
+    width: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .stopwatch h1 {
+    font-size: 32px;
+  }
+
+  .buttons {
+    gap: 15px;
+  }
+
+  .buttons img {
+    width: 35px;
+  }
+
+  .buttons img:nth-child(2) {
+    width: 50px;
+  }
+}
